@@ -177,10 +177,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor
 
-# Charger
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.charger.enable_suspend=true
-
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
@@ -432,10 +428,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml
-
-# System
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.binary_xml=false
 
 # Telephony-ext
 PRODUCT_PACKAGES += \

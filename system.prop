@@ -25,6 +25,9 @@ ro.camera.hfr.enable=1
 ro.camera.sensor.aux2m=1
 ro.camera.temperature.limit=450
 
+# Charger
+ro.charger.enable_suspend=true
+
 # Data modules
 persist.data.df.dev_name=rmnet_usb0
 persist.vendor.data.mode=concurrent
@@ -61,6 +64,9 @@ ro.netflix.bsp_rev=Q660-13149-1
 
 # QC framework value-adds
 ro.vendor.qti.va_odm.support=1
+
+# Recovery
+persist.sys.binary_xml=false
 
 # RIL
 DEVICE_PROVISIONED=1
