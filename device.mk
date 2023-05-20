@@ -17,6 +17,9 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/realme/RMX1801/RMX1801-vendor.mk)
 
+# API level, the device has been commercially launched on
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
@@ -378,11 +381,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full-v29.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite-v29.so
-
-
-# PRODUCT_SHIPPING_API_LEVEL indicates the first api level, device has been commercially launched on.
-PRODUCT_SHIPPING_API_LEVEL := 27
-
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
