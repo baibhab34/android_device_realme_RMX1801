@@ -28,9 +28,8 @@ $(call inherit-product, device/realme/RMX1801/device.mk)
 PRODUCT_NAME := arrow_RMX1801
 PRODUCT_DEVICE := RMX1801
 PRODUCT_MANUFACTURER := OPPO
-PRODUCT_BRAND := oppo
+PRODUCT_BRAND := OPPO
 PRODUCT_MODEL := Realme 2 Pro
-PRODUCT_ARCH := arm64
 DEVICE_MAINTAINER := Baibhab
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
