@@ -35,7 +35,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/realme/RMX1801 \
+    $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel
 

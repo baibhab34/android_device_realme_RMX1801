@@ -153,10 +153,10 @@ debug.sf.early_phase_offset_ns=1500000
 ro.soc.manufacturer=QTI
 ro.soc.model=SDM660
 
-# Time-Service
-persist.vendor.delta_time.enable=true
-
 # Sensors
 ro.vendor.sensors.facing=false
 ro.vendor.sensors.cmc=false
 ro.vendor.sdk.sensors.gestures=false
+
+# Time-Service
+persist.vendor.delta_time.enable=true
